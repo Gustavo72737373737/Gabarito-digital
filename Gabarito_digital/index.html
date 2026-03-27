@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabarito Digital</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1>Gabarito Digital</h1>
+        <p>Marque as alternativas de A a E e finalize para gerar o JSON de respostas.</p>
+      </header>
+
+      <section id="status-message" class="status-message" aria-live="polite"></section>
+
+      <section id="answer-sheet" class="answer-sheet" aria-label="Grade de questões"></section>
+
+      <section class="actions">
+        <button id="finalize-btn" type="button" class="btn btn-primary">Finalizar</button>
+        <button id="clear-btn" type="button" class="btn btn-secondary">Limpar Respostas</button>
+      </section>
+
+      <section class="result">
+        <h2>Resultado em JSON</h2>
+        <pre id="result-json" class="result-json">{}</pre>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
